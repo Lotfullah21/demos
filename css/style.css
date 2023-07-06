@@ -385,3 +385,92 @@ Products
     padding: 0 1rem;
   }
 }
+
+/* 
+====
+Services
+==== */
+
+.services-title {
+  margin-top: 2rem;
+  margin-bottom: -4rem;
+  text-align: center;
+}
+
+.service-card {
+  margin: 2rem 0;
+  background: var(--clr-grey-4);
+  border-radius: var(--radius);
+  box-shadow: 0px 4px 10px rgba(13, 13, 13, 0.21);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: scale(1.021);
+  box-shadow: 0px 4px 10px rgba(13, 13, 13, 0.41);
+}
+
+.service-img {
+  height: 18rem;
+  object-fit: cover;
+  /* we already have radius around div */
+  border-top-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+}
+
+.service-info {
+  padding: 2rem 1rem 1.5rem 1rem;
+  text-align: center;
+}
+
+.service-info p {
+  max-width: 20rem;
+  color: var(--clr-grey-2);
+  margin: 0 auto;
+}
+
+.service-btn {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  margin-top: 1.5rem;
+  font-size: 400;
+  border-radius: var(--radius);
+  padding: 0.6rem 0.5rem;
+}
+
+@media screen and (min-width: 760px) {
+  .service-card {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .service-card {
+    width: 30%;
+    margin-right: 3.333%;
+  }
+}
+
+/* 
+==
+services icon
+== 
+*/
+
+.service-image-container {
+  position: relative;
+}
+
+.service-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  font-size: 2rem;
+  padding: 0.45rem 0.55rem;
+  background-color: rgb(126, 171, 201);
+  border-radius: 50%;
+  border: solid 0.4rem var(--clr-grey-4);
+  transform: translate(-50%, 50%);
+}
