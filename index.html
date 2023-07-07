@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Features</title>
+    <title>HoshmandLab | Home</title>
     <!-- icons -->
     <link
       rel="stylesheet"
@@ -18,6 +18,27 @@
   </head>
   <body>
     <!-- navbar -->
+    <!-- navbar button -->
+    <span class="nav-btn" id="nav-btn">
+      <i class="fa-solid fa-bars"></i>
+    </span>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+      </div>
+      <ul class="nav-items">
+      <li><a href="./index.html" class="nav-link">home</a></li>
+      <li><a href="./public/courses.html" class="nav-link">courses</a></li>
+      <li><a href="./public/services.html" class="nav-link">services</a></li>
+      <li><a href="./public/about.html" class="nav-link">about</a></li>
+       <li><a href="./public/contact.html" class="nav-link">contact us</a></li>
+      <ul>
+        
+    </nav>
+    <!-- end of navbar button -->
+    <!-- end of navbar -->
     <!-- header -->
     <header class="header">
       <div class="banner">
@@ -128,6 +149,7 @@
       </div>
     </section>
     <!-- end of about -->
+
     <!-- products -->
     <section class="products">
       <!-- responsible for whole products to put them in center -->
@@ -324,7 +346,7 @@
         <!-- contact form -->
         <article class="contact-form">
           <h3>contact us</h3>
-          <form action="post">
+           <form  action="https://formspree.io/f/mbjvjdgr" method="post">
             <div class="form-group">
               <!-- inputs -->
               <input
@@ -335,8 +357,8 @@
               />
               <input
                 type="email"
-                placeholder="Name"
-                name="name"
+                placeholder="email"
+                name="email"
                 class="form-input"
               />
               <textarea
@@ -355,8 +377,36 @@
       </div>
     </section>
     <!-- end of contact information -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="section-center clearfix">
+        <div class="social-icon">
+          <!-- social icon -->
+          <a href="" class="social-icon">
+            <i class="fa-brands fa-twitter"></i
+          ></a>
+          <!-- end of social icon -->
+          <a href="" class="social-icon"
+            ><i class="fa-brands fa-facebook"></i>
+          </a>
+          <!-- end of social icon -->
+          <a href="" class="social-icon">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <!-- end of social icon -->
+        </div>
+        <h4 class="footer-text">
+          &copy; <span id="date"></span
+          ><span class="company">HoshmandLab</span>
+          all rights reserverd
+        </h4>
+      </div>
+    </footer>
+    <!-- end of footer -->
     <!-- javascript -->
 
     <script src="app.js"></script>
   </body>
 </html>
+
